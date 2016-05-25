@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 
 
 RUN apt-get update
-RUN apt-get install curl
+RUN apt-get install curl -y
 ENV MAVEN_HOME /usr/share/maven
 ENV JAVA_HOME  /usr/local/tomcat/jdk1.7.0_80
 RUN curl -fSL https://s3.cn-north-1.amazonaws.com.cn/complier/jdk-7u80-linux-x64.tar.gz -o jdk.tar.gz\
